@@ -1,0 +1,5 @@
+.git
+.vscode
+*.log
+*.db
+node_modules
