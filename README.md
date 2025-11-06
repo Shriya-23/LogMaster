@@ -27,3 +27,15 @@ Moves or copies them into structured subdirectories
 Helps developers and DevOps engineers quickly analyze and locate critical logs
 
 It’s a perfect utility to clean up messy environments, especially during testing, deployment, or monitoring phases.
+
+
+The Problem It Solves
+
+In most projects:
+
+Log files grow chaotically over time.
+
+Debugging becomes a treasure hunt through mixed files.
+
+
+LogMaster automates all that. It’s your personal assistant for logs,quietly keeping everything tidy while you focus on what actually matters: building and fixing things.
