@@ -39,3 +39,47 @@ Debugging becomes a treasure hunt through mixed files.
 
 
 LogMaster automates all that. It’s your personal assistant for logs,quietly keeping everything tidy while you focus on what actually matters: building and fixing things.
+
+✨ Features
+
+✅ Organizes logs into clean, structured folders
+
+✅ Works locally or inside Docker containers
+
+✅ Lightweight — built in Go with zero dependencies
+
+✅ Supports large directories and nested folders
+
+✅ Developer-friendly CLI experience
+
+⚙️ Tech Stack
+
+Component	Technology
+
+🧠 Language	Go (Golang 1.22)
+
+📦 Packaging	Docker
+
+🧰 Libraries	Standard Go libraries (os, path/filepath, strings)
+
+🧪 Environment	Alpine Linux (Docker Base)
+
+🧑‍💻 How to Run It Locally
+
+🧩 Option 1: Run with Go
+
+# Clone the repository
+
+git clone https://github.com/Shriya-23/LogMaster.git
+
+cd LogMaster
+
+# Build and run
+
+go run main.go
+
+
+You’ll be prompted to enter your log folder path:
+
+Enter the path of log folder to organize: C:\Users\YourName\Documents\LogMasterTest
+
