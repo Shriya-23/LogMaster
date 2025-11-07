@@ -29,7 +29,7 @@ Helps developers and DevOps engineers quickly analyze and locate critical logs
 It’s a perfect utility to clean up messy environments, especially during testing, deployment, or monitoring phases.
 
 
-The Problem It Solves
+🔹The Problem It Solves
 
 In most projects:
 
@@ -42,31 +42,31 @@ LogMaster automates all that. It’s your personal assistant for logs,quietly ke
 
 ✨ Features
 
-✅ Organizes logs into clean, structured folders
+-Organizes logs into clean, structured folders
 
-✅ Works locally or inside Docker containers
+-Works locally or inside Docker containers
 
-✅ Lightweight — built in Go with zero dependencies
+-Lightweight — built in Go with zero dependencies
 
-✅ Supports large directories and nested folders
+-Supports large directories and nested folders
 
-✅ Developer-friendly CLI experience
+-Developer-friendly CLI experience
 
 ⚙️ Tech Stack
 
-Component	Technology
+🔹Component	Technology
 
-🧠 Language	Go (Golang 1.22)
+-Language	Go (Golang 1.22)
 
-📦 Packaging	Docker
+-Packaging	Docker
 
-🧰 Libraries	Standard Go libraries (os, path/filepath, strings)
+-Libraries	Standard Go libraries (os, path/filepath, strings)
 
-🧪 Environment	Alpine Linux (Docker Base)
+-Environment	Alpine Linux (Docker Base)
 
-🧑‍💻 How to Run It Locally
+🔹How to Run It Locally
 
-🧩 Option 1: Run with Go
+🔹Option 1: Run with Go
 
 # Clone the repository
 
@@ -82,4 +82,51 @@ go run main.go
 You’ll be prompted to enter your log folder path:
 
 Enter the path of log folder to organize: C:\Users\YourName\Documents\LogMasterTest
+
+🔹Example Log Categories that i built locally to test them [ Not pushed to Github]
+
+-System Logs — system_activity.log, kernel_monitor.log, os_events.log
+-Security Audits — security_audit.log, firewall_events.log, intrusion_attempts.log
+
+⚙️ Working
+
+LogMaster automates the process of sorting and organizing log files intelligently.
+
+-Input Folder Selection:
+The user specifies a directory path containing raw log files.
+
+-Timestamp Extraction:
+LogMaster scans each log file, identifies timestamps (e.g., 2025-11-01 10:30:00), and uses them to determine when each event occurred.
+
+ -Smart Categorization:
+Based on keywords and patterns (like ERROR, INFO, WARN, DEBUG, or filenames such as security, system, database), the tool classifies each log into its respective category.
+
+🏗️ Organized Folder Structure:
+
+It creates structured folders such as:
+
+/OrganizedLogs/
+
+    /2025-11-01/
+    
+        /Security/
+        
+        /System/
+        
+        /Database/
+
+
+Each folder contains logs sorted by date and category, making it effortless to find what you need.
+
+-Readable Output:
+Once organized, the program prints a summary of the operation — total logs processed, categories created, and storage path.
+
+💼 About Me
+
+Hi! I’m Shriya Sharma, A Computer Science student passionate about building practical, data-driven, and impactful tech solutions.
+
+I love transforming ideas into simple, meaningful tools that bridge the gap between technology and real-world problems.
+
+Have any ideas, suggestions, or feedback about this project? Feel free to reach out at shriya.sharma1923@gmail.com
+I’d love to hear from you!
 
